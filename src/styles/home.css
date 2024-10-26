@@ -1,0 +1,13 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 20px;
+}
+
+.home-text {
+    text-align: center;
+    margin: auto;
+}

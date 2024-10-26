@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Progress - Building Healthy Habits</title>
+
+    <!-- normalize.css for cross-browser stuff -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+    <!-- responsive styling* -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="img/favicon.png" alt="logo">
+        <h1>Track Your Progress</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="goals.html">Goals</a>
+            <a href="habit_tracker.html">Habit Tracker</a>
+            <a href="progress.html">Progress</a>
+            <a href="tips.html">Tips</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="progress-visualization">
+            <h2>Progress Visualization</h2>
+            <img src="img/progress_chart1.jpg" alt="Progress Chart 1">
+            <img src="img/progress_chart2.jpg" alt="Progress Chart 2">
+        </section>
+
+        <section id="progress-form">
+            <h2>Submit Your Progress</h2>
+            <form onsubmit="return displayGraph()">
+                <label for="goal">Goal:</label>
+                <input type="text" id="goal" name="goal" required>
+                <label for="progress">Progress:</label>
+                <input type="text" id="progress" name="progress" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="graph-display" style="display:none;">
+            <h2>Your Progress Graph</h2>
+            <img src="img/sample_graph2.jpg" alt="Sample Graph">
+        </section>
+    </main>
+
+    <footer>
+        <p>by <a href="mailto:tooly206@uw.edu">Abdulbasit Abdalla</a>.</p>
+        &copy; 2024
+    </footer>
+
+    <script>
+        function displayGraph() {
+            document.getElementById('graph-display').style.display = 'block';
+            return false; // prevent actual form submission
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Habit Tracker - Building Healthy Habits</title>
+
+    <!-- normalize.css for cross-browser stuff -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+    <!-- responsive styling* -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="img/favicon.png" alt="logo">
+        <h1>Building Healthy Habits</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="goals.html">Goals</a>
+            <a href="habit_tracker.html">Habit Tracker</a>
+            <a href="progress.html">Progress</a>
+            <a href="tips.html">Tips</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="habit-tracker">
+            <h2>Daily Habit Tracking</h2>
+            <button onclick="document.getElementById('habit-form').style.display='block'">Add Habit</button>
+            <form id="habit-form" style="display:none;">
+                <label for="habit-name">Habit Name:</label>
+                <input type="text" id="habit-name" name="habit-name" required>
+                <button type="submit">Add Habit</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Habit</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-07-05</td>
+                        <td>Exercise</td>
+                        <td>Completed</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <!-- More rows as needed -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p> by <a href="mailto:mhashi@uw.edu">Muhamed Hashi</a>.</p>
+        &copy; 2024
+    </footer>
+</body>
+</html>

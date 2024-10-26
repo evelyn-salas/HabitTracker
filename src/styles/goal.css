@@ -1,0 +1,11 @@
+.goal-item.active {
+    background-color: var(--active-color);
+    border: 1px solid var(--border-active-color);
+}
+
+.goal-item.inactive {
+    background-color: var(--inactive-color);
+    border: 1px solid var(--border-inactive-color);
+    text-decoration: line-through;
+    opacity: 0.6;
+}

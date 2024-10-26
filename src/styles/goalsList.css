@@ -1,0 +1,75 @@
+/* Create Goals Section Styling */
+.create-goals {
+  background-color: var(--background-color);
+  padding: 60px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px var(--box-shadow);
+}
+
+/* Goals Container Styling */
+.goals-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Individual Goal Item Styling */
+.goal-item {
+  flex: 1 1 calc(33.333% - 40px);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 8px var(--box-shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.goal-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px var(--box-shadow);
+}
+
+/* Adjust heading size and spacing */
+.goal-item h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+/* Goal Form Styling */
+.compact-goal-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.compact-goal-form .form-row {
+  flex: 1 1 100%;
+  margin-bottom: 10px;
+}
+
+.compact-goal-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.compact-goal-form input,
+.compact-goal-form select,
+.compact-goal-form textarea {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid var(--grey-border);
+  border-radius: 4px;
+  font-size: 0.9em;
+  background-color: #fff;
+}
+
+.compact-goal-form textarea {
+  resize: vertical;
+  height: 70px;
+}

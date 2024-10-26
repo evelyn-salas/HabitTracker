@@ -1,0 +1,68 @@
+.calendar {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.fc {
+  max-height: 500px;
+}
+
+.fc-header-toolbar {
+  margin-bottom: 10px;
+}
+
+.fc-daygrid-day {
+  height: 100px;
+  overflow-y: auto;
+}
+
+.fc-daygrid-day-events {
+  max-height: 80px;
+  overflow-y: auto;
+}
+
+.fc-daygrid-event {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fc .fc-event {
+  cursor: pointer;
+}
+
+/* Tablet Screens */
+@media (min-width: 768px) {
+  .calendar {
+    max-width: 900px;
+    padding: 20px;
+  }
+
+  .fc-daygrid-day {
+    height: 120px;
+  }
+
+  .fc-daygrid-day-events {
+    max-height: 100px;
+  }
+}
+
+/* Desktop Screens */
+@media (min-width: 1024px) {
+  .calendar {
+    max-width: 1100px;
+  }
+
+  .fc-daygrid-day {
+    height: 150px; 
+  }
+
+  .fc-daygrid-day-events {
+    max-height: 130px; 
+  }
+
+  .fc .fc-event {
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,266 @@
+/* Universal Styles */
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header Styles */ 
+header {
+    background-color: rgb(117, 147, 84);
+    color: rgb(250, 247, 244);
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 75px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Styles */
+nav {
+    margin-left: auto;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgb(117, 147, 84);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* what-about HTML Styles */
+#what-about {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#what-about h2 {
+    margin-left: 10px;
+}
+
+#what-about img {
+    margin-left: 500px;
+    max-width: 50%;
+    height: auto;
+}
+
+#what-about p {
+    margin-left: 10px;
+}
+
+/* why-about HTML Styles*/
+#why-about {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+#why-about h2 {
+    margin-right: 500px;
+}
+
+#why-about p {
+    margin-right: 620px;
+}
+
+/**/
+#explanation h2 {
+    background-color: lightblue;
+    text-align: center;
+}
+
+#explanation ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+#habit-tips, #feedback-form {
+    margin-bottom: 20px;
+}
+
+#habit-tips img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#feedback-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback-form label {
+    margin-bottom: 5px;
+}
+
+#feedback-form input, #feedback-form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+}
+
+#feedback-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: lightblue;
+    color: white;
+    cursor: pointer;
+}
+
+#feedback-form button:hover {
+    background-color: skyblue;
+}
+
+/* Progress HTML Styles */
+#progress-visualization, #progress-form {
+    margin-bottom: 20px;
+}
+
+#progress-visualization img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#progress-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#progress-form label {
+    margin-bottom: 5px;
+}
+
+#progress-form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+}
+
+#progress-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: lightblue;
+    color: white;
+    cursor: pointer;
+}
+
+#progress-form button:hover {
+    background-color: skyblue;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    nav a {
+        margin: 0 15px;
+    }
+
+    main {
+        padding: 20px;
+        max-width: 1450px;
+        margin: 0 auto;
+    }
+
+    #progress-visualization img {
+        width: 48%;
+        margin-right: 2%;
+    }
+
+    #progress-visualization img:nth-of-type(2) {
+        margin-right: 0;
+    }
+
+    #progress-visualization {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #progress-form form {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #progress-form label, #progress-form input {
+        width: 48%;
+        margin-right: 2%;
+    }
+
+    #progress-form label:nth-of-type(2), #progress-form input:nth-of-type(2) {
+        margin-right: 0;
+    }
+
+    #progress-form button {
+        width: 100%;
+    }
+}
+
+.goals-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 80%;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.goal-item {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.goal-item h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.goal-item p {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+.goal-item.active {
+    background-color: #d4edda;
+    border: 1px solid #a0bfa2;
+}
+
+.goal-item.inactive {
+    background-color: #f8d7da;
+    border: 1px solid #d7aaae;
+}

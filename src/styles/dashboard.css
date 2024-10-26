@@ -1,0 +1,123 @@
+/* Dashboard Page Styling */
+
+/* General Dashboard Layout */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+/* Goal Overview Section */
+.goal-overview,
+.habit-overview,
+.calendar-view {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--box-shadow);
+}
+
+/* Section Titles */
+.goal-overview h2,
+.habit-overview h2,
+.calendar-view h2 {
+  font-size: 2em;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Goal and Habit List Styling */
+.goal-overview ul,
+.habit-overview ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.goal-overview li,
+.habit-overview li {
+  margin: 10px 0;
+  padding: 15px;
+  background-color: var(--offwhite);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--box-shadow);
+  transition: transform 0.2s;
+}
+
+.goal-overview li:hover,
+.habit-overview li:hover {
+  transform: translateY(-3px);
+}
+
+/* Goal and Habit Item Titles */
+.goal-overview h3,
+.habit-overview h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: var(--primary-color);
+}
+
+.goal-overview p,
+.habit-overview p {
+  margin: 5px 0 0;
+  font-size: 1em;
+  color: var(--light-text-color);
+}
+
+/* Calendar View Styling */
+.calendar-view {
+  padding: 20px;
+}
+
+.react-calendar {
+  width: 100%;
+  max-width: 1000px;
+  background-color: var(--offwhite);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--box-shadow);
+}
+
+.react-calendar__tile {
+  padding: 15px;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.react-calendar__tile--now {
+  background-color: var(--alt-text-color);
+  color: white;
+}
+
+.react-calendar__tile--active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.react-calendar__tile:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.react-calendar__tile abbr {
+  text-decoration: none;
+}
+
+.react-calendar__tile--active abbr {
+  color: white;
+}
+
+.react-calendar__tile--hasActive abbr {
+  color: var(--text-color);
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: var(--alt-text-color);
+}

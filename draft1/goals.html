@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Goals - Building Healthy Habits</title>
+
+    <!-- normalize.css for cross-browser stuff -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+    <!-- responsive styling* -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="img/favicon.png" alt="logo">
+        <h1>Building Healthy Habits</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="goals.html">Goals</a>
+            <a href="habit_tracker.html">Habit Tracker</a>
+            <a href="progress.html">Progress</a>
+            <a href="tips.html">Tips</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about-goals">
+            <h2>Why Goals?</h2>
+            <p>Setting goals helps to maintain focus and motivation towards achieving specific outcomes.</p>
+        </section>
+
+        <section id="create-goals">
+            <h2>Create a Goal</h2>
+            <button onclick="document.getElementById('goal-form').style.display='block'">Create a Goal</button>
+            <form id="goal-form" style="display:none;">
+                <label for="goal-name">Goal Name:</label>
+                <input type="text" id="goal-name" name="goal-name" required>
+                <label for="goal-description">Description:</label>
+                <textarea id="goal-description" name="goal-description" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="edit-goals">
+            <h2>Edit Goals</h2>
+            <p>Click on a goal to edit it. You can change the name, description, and status of the goal.</p>
+        </section>
+
+        <section id="managing-goals">
+            <h2>Managing Goals</h2>
+            <p>Manage your goals by tracking their progress, setting deadlines, and marking them as completed.</p>
+        </section>
+
+        <section id="categorizing-goals">
+            <h2>Categorizing Goals</h2>
+            <p>Organize your goals into different categories for better management. Use the filters below to sort your goals.</p>
+            <label for="goal-filter">Filter by:</label>
+            <select id="goal-filter">
+                <option value="all">All</option>
+                <option value="active">Active</option>
+                <option value="completed">Completed</option>
+            </select>
+        </section>
+
+        <div class="goals-container">
+            <div class="goal-item active">
+                <h3>Goal 1</h3>
+                <p>Healthy Breakfast</p>
+                <button>Edit</button>
+            </div>
+            <div class="goal-item inactive">
+                <h3>Goal 2</h3>
+                <p>Exercise</p>
+                <button>Edit</button>
+            </div>
+            <div class="goal-item active">
+                <h3>Goal 3</h3>
+                <p>Meditation</p>
+                <button>Edit</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p> by <a href="mailto:mlli03@uw.edu">Monica Li</a>.</p>
+        &copy; 2024
+    </footer>
+</body>
+</html>

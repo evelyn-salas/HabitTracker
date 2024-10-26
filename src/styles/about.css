@@ -1,0 +1,132 @@
+/* About Page Styling */
+.about-intro {
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--box-shadow);
+}
+
+/* Cards */
+.example-deck {
+  background-color: var(--background-color);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.example-deck div {
+  flex: 1 1 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: var(--background-color);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--box-shadow);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.example-deck img {
+  width: 100%;
+  height: auto;
+  margin-bottom: -20px;
+}
+
+.example-deck a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: var(--alt-text-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* About Team */
+.about-team {
+  padding: 10px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--box-shadow);
+}
+
+.about-team ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-team li {
+  margin: 5px 0;
+}
+
+.about-team a {
+  color: var(--alt-text-color);
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.about-team a:hover {
+  text-decoration: underline;
+}
+
+/* About Mission */
+.about-mission {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Larger Screens */
+@media (min-width: 480px) {
+  .about-intro, .about-team, .about-mission {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .example-deck {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 15px;
+  }
+
+  .example-deck div {
+    flex: 1 1 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+    margin: 10px;
+  }
+
+  .example-deck a {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+
+  .about-team a {
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-intro, .about-team, .about-mission {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .example-deck div {
+    flex: 1 1 calc(25% - 40px);
+    max-width: calc(25% - 40px);
+    margin: 10px;
+  }
+
+  .example-deck a {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  .about-team a {
+    font-size: 1em;
+  }
+}
